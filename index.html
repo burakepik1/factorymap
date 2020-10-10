@@ -10,11 +10,31 @@
         canvas {
             display: block;
         }
+
+        button {
+            position: absolute;
+            display: block;
+            z-index: 99;
+            left: 1%;
+            top: 1%;
+        }
+
+        .btnCls {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #008CBA;
+        }
     </style>
 </head>
 
 <body>
-    <button style="display: block; z-index: 100;" onclick="carMove()">Move</button>
+    <button class="btnCls" style="display: block; z-index: 100;" onclick="carMove()">Move</button>
     <script src="js/three.js"></script>
     <script src="js/OrbitControls.js"></script>
     <script src="js/OBJLoader.js"></script>

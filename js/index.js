@@ -307,7 +307,7 @@ var mBusRight = false;
 function animate() {
     requestAnimationFrame(animate);
     if (move) {
-        audio.play();
+        // audio.play();
         if (bus.position.x <= 4800) {
             bus.translateX(2);
             bus.updateMatrix();
@@ -318,6 +318,7 @@ function animate() {
             move = false;
             setTimeout(function () {
                 move = true;
+                audio.play();
             }, 3000);
         }
 
